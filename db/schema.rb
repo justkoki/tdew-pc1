@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(:version => 20120316023217) do
   end
 
   create_table "roles_users", :force => true do |t|
-    t.integer "user_id"
     t.integer "role_id"
+    t.integer "user_id"
   end
 
   create_table "users", :force => true do |t|
